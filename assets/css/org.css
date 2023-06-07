@@ -1,0 +1,13 @@
+.right-line {
+  border-right: 5px #ccc solid;
+  height: 2em;
+}
+
+.top-line {
+  border-top: 5px #ccc solid;
+}
+
+.halved {
+  width: 50%;
+  float: left;
+}

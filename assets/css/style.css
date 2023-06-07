@@ -1,0 +1,956 @@
+/*Google Font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #f2921d;
+  --primary-light-color: #f2cd5c;
+  --green-color: #658864;
+
+  --green-light-color: #c0db3825;
+  --white-color: #fff;
+  --black-color: #323232;
+
+  /*Font dan Typhografi*/
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 58px;
+  --h1-font-size: 45px;
+  --normal-font-size: 18px;
+  --small-font-size: 16px;
+  --smaller-font-size: 14px;
+
+  /*Font Weight*/
+  --font-semibold: 600;
+  --font-medium: 500;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-dark {
+  color: var(--black-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-primary-light {
+  background-color: var(--primary-light-color);
+}
+
+/* Costum Scrollbar */
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 0.5rem;
+}
+
+.data .form-group {
+  justify-content: center;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.data .form-group input {
+  border-color: #f2921d;
+  justify-content: center;
+  width: 190px;
+}
+.data .btn-data {
+  margin-left: 1rem;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+/*Navbar*/
+.navbar {
+  padding: 12px;
+  transition: all 0.5s ease;
+}
+
+.navbar-brand span {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  border-radius: 30px;
+}
+
+.navbar-brand img {
+  width: 45px;
+  height: 45px;
+}
+
+.nav-link {
+  margin-right: 39px;
+  color: var(--black-color);
+  font-weight: var(--font-medium);
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-link:active {
+  color: var(--primary-color);
+}
+
+.drop-shadow {
+  box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.04);
+}
+
+/*Button*/
+.btn {
+  padding: 14px 22px;
+  border-radius: 40px;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  filter: drop-shadow (0px 10px 30px rgba(186, 37, 48, 0.15));
+  background-color: var(--primary-color);
+}
+
+/* Badge */
+.badge {
+  padding: 0.7rem;
+  border-radius: 8px;
+  font-weight: var(--font-medium);
+}
+
+/* Home */
+section.home {
+  padding: 8rem 0rem 10rem;
+  background-color: var(--green-color);
+}
+
+.text-home-bold {
+  font-size: var(--biggest-font-size);
+  line-height: 65px;
+}
+
+.text-home-bold span {
+  color: var(--white-color);
+}
+
+.text-home-reguler {
+  font-size: var(--normal-font-size);
+  line-height: 27px;
+}
+
+/* Services */
+.info-panel {
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  margin-top: -130px;
+  background-color: var(--white-color);
+  padding: 20px;
+}
+
+.info-panel img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.info-panel p {
+  font-size: 14px;
+  color: #acacac;
+  margin-top: -5px;
+  font-weight: 200;
+  text-align: center;
+}
+
+/* ===================================================== Section Kepengurusan=============================== */
+/* Jumbotron */
+.jumbotron {
+  padding-top: 8rem;
+  background-color: var(--green-color);
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.section-title h3 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semibold);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--primary-color);
+}
+
+.section-title h3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: var(--primary-light-color);
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--green-color);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+/* Card Content */
+.card-content {
+  padding-top: 1rem;
+}
+
+/* ===================================================== End Section Kepengurusan=============================== */
+
+/* ================================ Section Tentang Kami ================ */
+.tentang {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.text-tentang {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.text-tentang h5 {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-semibold);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--black-color);
+}
+
+.text-tentang h5 span {
+  color: var(--primary-color);
+}
+
+.text-tentang h5::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: var(--primary-color);
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.text-tentang h5::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--primary-color);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.tentang h3 {
+  font-size: 52px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.tentang h3 span {
+  font-weight: 500;
+}
+
+.tentang p {
+  font-size: 16px;
+  color: #acacac;
+  font-weight: 200;
+  margin-top: 25px 0;
+}
+
+/* ================================ End Section Tentang Kami ================================================= */
+
+/* ==================================== Section Dokumentasi Kegiatan ==========================================*/
+.title-dokumentasi {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.title-dokumentasi h2 {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-semibold);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--black-color);
+}
+.title-dokumentasi h2 span {
+  color: var(--primary-color);
+}
+
+.title-dokumentasi h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: var(--primary-color);
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.title-dokumentasi h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--primary-color);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.dokumentasi {
+  padding-top: 5rem;
+}
+
+.item img {
+  height: 280px;
+}
+
+/* =============================================== End Section Dokumentasi Kegiatan ============================ */
+
+/* =============================================== Halaman Dokumentasi Kegiatan ================================  */
+
+.title-content {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.title-content h2 {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-semibold);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--primary-color);
+}
+
+.title-content h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: var(--primary-light-color);
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.title-content h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--green-color);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+/* =========================================== Halaman Donasi Zakat ===================================== */
+
+.banner-zakat {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 80vh;
+  background-image: url(../img/zakat-fitr.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.banner-carve-zakat:before {
+  content: "";
+  position: absolute;
+  height: 80vh;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: url(../img/wave-d.png) 100% 100% no-repeat;
+  background-size: contain;
+}
+
+.overlay-zakat {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+  margin: 0 auto;
+  text-align: center;
+}
+
+.overlay-zakat h1 {
+  padding-top: 200px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: var(--font-semibold);
+}
+.overlay-zakat p {
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Formulir */
+.form-content .info {
+  border-top: 3px solid #658864;
+  border-bottom: 3px solid #658864;
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form-content .info i {
+  font-size: 20px;
+  color: var(--primary-color);
+  background: var(--primary-light-color);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-content .info h6 {
+  font-size: 22px;
+  padding: 0 0 0 60px;
+  font-weight: var(--font-medium);
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+.form-content .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: var(--small-font-size);
+  text-align: justify;
+}
+
+.form-content .form-formulir {
+  width: 100%;
+  border-top: 3px solid #658864;
+  border-bottom: 3px solid #658864;
+  padding: 30px;
+  background: var(--white-color);
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.form-content .form-formulir .form-group {
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.form-content .form-formulir input,
+.form-content .form-formulir select {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+  height: 35px;
+}
+
+.form-content .form-formulir button {
+  background: var(--green-color);
+  border: 0;
+  padding: 12px 34px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  align-items: center;
+}
+
+.data-zakat h3 {
+  padding-top: 150px;
+}
+
+.table {
+  display: flex;
+  font-size: 32px;
+}
+
+.head {
+  width: 80%;
+}
+
+/* =========================================== End Halaman Donasi Zakat ================================= */
+
+/* Halaman Donasi Infaq */
+
+.banner {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 80vh;
+  background-image: url(../img/jumbotron.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.banner-carve:before {
+  content: "";
+  position: absolute;
+  height: 80vh;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: url(../img/wave-d.png) 100% 100% no-repeat;
+  background-size: contain;
+}
+
+.overlay {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+  margin: 0 auto;
+  text-align: center;
+}
+
+.overlay h1 {
+  padding-top: 160px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: var(--font-semibold);
+}
+.overlay p {
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+/* =========================================== Halaman Sedekah ====================================================*/
+
+.banner-sedekah {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 80vh;
+  background-image: url(../img/sedekah.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.banner-carve-sedekah:before {
+  content: "";
+  position: absolute;
+  height: 80vh;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: url(../img/wave-d.png) 100% 100% no-repeat;
+  background-size: contain;
+}
+
+.overlay-sedekah {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+  margin: 0 auto;
+  text-align: center;
+}
+
+.overlay-sedekah h1 {
+  padding-top: 150px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: var(--font-semibold);
+}
+.overlay-sedekah p {
+  font-style: italic;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+/* =========================================== End Halaman Sedekah ====================================================*/
+
+/* =========================================== Halaman Kerjasama ================================================== */
+
+.banner-kerjasama {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 70vh;
+  background-image: url(../img/masjid.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.banner-carve-kerjasama:before {
+  content: "";
+  position: absolute;
+  height: 70vh;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: url(../img/wave-d.png) 100% 100% no-repeat;
+  background-size: contain;
+}
+
+.overlay-kerjasama {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+  margin: 0 auto;
+  text-align: center;
+}
+
+.overlay-kerjasama h1 {
+  padding-top: 250px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: var(--font-semibold);
+}
+.overlay-kerjasama p {
+  font-style: italic;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+/* Tabel */
+
+.card-body .table .row-text th,
+td {
+  font-size: 14px;
+  color: var(--primary-color);
+  text-align: center;
+}
+.table td th {
+  padding: 20px 20px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-footer {
+  font-size: 16px;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+}
+
+.card-footer nav {
+  background-color: #fff;
+}
+
+/**/
+
+.banner-kerjasama {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 70vh;
+  background-image: url(../img/masjid.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.banner-carve-kerjasama:before {
+  content: "";
+  position: absolute;
+  height: 70vh;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: url(../img/wave-d.png) 100% 100% no-repeat;
+  background-size: contain;
+}
+
+.overlay-kerjasama {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+  margin: 0 auto;
+  text-align: center;
+}
+
+.overlay-kerjasama h1 {
+  padding-top: 250px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: var(--font-semibold);
+}
+.overlay-kerjasama p {
+  font-style: italic;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+/**/
+
+/* ============================================ Registrasi /Login ===============================================  */
+/* Formulir */
+
+.form-content .info {
+  border-top: 3px solid #658864;
+  border-bottom: 3px solid #658864;
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form-content .info i {
+  font-size: 20px;
+  color: var(--primary-color);
+  background: var(--primary-light-color);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.form-content .info h6 {
+  font-size: 22px;
+  padding: 0 0 0 60px;
+  font-weight: var(--font-medium);
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+.form-content .info p {
+  padding: 0 0 10px 60px;
+  font-size: var(--small-font-size);
+  text-align: justify;
+}
+
+.form-content .form-formulir {
+  width: 100%;
+  border-top: 3px solid #658864;
+  border-bottom: 3px solid #658864;
+  padding: 30px;
+  background: var(--white-color);
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.form-content .form-formulir .wrapper {
+  overflow: hidden;
+}
+.form-content .form-formulir .wrapper .title-text {
+  display: flex;
+  color: var(--primary-color);
+  width: 200%;
+}
+
+.form-content .form-formulir .wrapper .title {
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-content .form-formulir .wrapper .slide-controls {
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+}
+
+.form-content .form-formulir .wrapper .slide-controls .slide {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+
+.slide-controls label.signup {
+  color: #000;
+}
+.slide-controls .slider-tab {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 15px;
+  background: -webkit-linear-gradient(left, #658864, #658864, #658864, #658864);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+input[type="radio"] {
+  display: none;
+}
+#signup:checked ~ .slider-tab {
+  left: 50%;
+}
+#signup:checked ~ label.signup {
+  color: #fff;
+  cursor: default;
+  user-select: none;
+}
+#signup:checked ~ label.login {
+  color: #000;
+}
+#login:checked ~ label.signup {
+  color: #000;
+}
+#login:checked ~ label.login {
+  cursor: default;
+  user-select: none;
+}
+.wrapper .form-container {
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner {
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form {
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-inner form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 15px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.form-inner form .field input:focus {
+  border-color: var(--green-color);
+  /* box-shadow: inset 0 0 3px #fb6aae; */
+}
+.form-inner form .field input::placeholder {
+  color: #999;
+  transition: all 0.3s ease;
+}
+form .field input:focus::placeholder {
+  color: var(--green-color);
+}
+.form-inner form .pass-link {
+  margin-top: 5px;
+}
+.form-inner form .signup-link {
+  text-align: center;
+  margin-top: 30px;
+}
+.form-inner form .pass-link a,
+.form-inner form .signup-link a {
+  color: #1a75ff;
+  text-decoration: none;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover {
+  text-decoration: underline;
+}
+
+.right-line {
+  border-right: 5px #000 solid;
+  height: 2rem;
+}
+
+.top-line {
+  border-top: 5px #000 solid;
+}
+
+.halved {
+  width: 50%;
+  float: left;
+}
+
+/* ============================================ End Registrasi / Login ===========================================  */
+
+/* =========================================== Footer ====================================================*/
+/* Footer */
+footer.footer-section .copyright {
+  font-size: var(--smaller-font-size);
+  padding: 1rem;
+}

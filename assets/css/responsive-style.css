@@ -1,0 +1,85 @@
+@media (min-width: 1399.38px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 12px 0;
+  }
+  a.nav-link {
+    padding: 0.8rem;
+  }
+
+  section.home {
+    padding: 8rem 0rem 3rem;
+    background-color: var(--green-color);
+  }
+
+  .badge {
+    display: block;
+  }
+
+  .card-content {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .section-title h3 {
+    font-size: 35px;
+    font-weight: var(--font-semibold);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--primary-color);
+  }
+
+  .title-dokumentasi h2 span {
+    color: var(--primary-color);
+  }
+
+  .text-tentang h5 {
+    font-size: 35px;
+    font-weight: var(--font-semibold);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--primary-color);
+  }
+
+  .table {
+    align-items: center;
+    display: flex;
+    font-size: var(--normal-font-size);
+  }
+
+  .title-dokumentasi h5 span {
+    color: var(--primary-color);
+  }
+
+  .text-home-bold {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .text-home-reguler {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .btn {
+    display: block;
+    justify-content: center;
+  }
+  .overlay-sedekah p {
+    font-style: italic;
+    font-size: 14px;
+  }
+}
